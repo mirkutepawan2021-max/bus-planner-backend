@@ -30,7 +30,7 @@ const PORT = process.env.PORT || 4000;
 const MONGO_URI = "mongodb+srv://poojakarande06:bus1234@cluster0.4dmcubr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // --- 3. CONFIGURE MIDDLEWARE ---
-const whitelist = [ 'http://localhost:3000', 'https://your-live-frontend-url.vercel.app' ];
+const whitelist = [ 'http://localhost:3000', 'https://bus-planner-frontend-seven.vercel.app' ];
 const corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.indexOf(origin) !== -1 || !origin) { callback(null, true); }
